@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url("qa-bg.jpg") no-repeat center center/cover;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+}
+.qr-container{
+    text-align: center;
+    padding: 20px;
+    
+}
+.heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 50px;
+    background: url("Logo.svg") no-repeat center center;
+    background-size: contain;
+    margin-bottom: 20px;
+    
+}
+
+.url-container{
+    background: #030616;
+    display: flex;
+    align-items: center;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    padding: 8px;
+    width: 400px;
+}
+
+.url{
+    flex: 1;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #ffffff;
+}
+
+.url::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.button {
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #3b82f6; /* Blue color */
+    color: #ffffff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.button:hover {
+    background-color: #2563eb; /* Darker blue */
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .url-container {
+        width: 90%;
+    }
+}
+
+#qrcode{
+    padding: 20px;
+    margin: 15px;
+    background-color: aliceblue;
+    border-radius: 20px;
+}
